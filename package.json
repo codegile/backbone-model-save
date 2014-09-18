@@ -1,0 +1,20 @@
+{
+  "name": "backbone-model-save",
+  "version": "0.1.0",
+  "description": "Send only specific attributes to server when saving models",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lupugabriel1/backbone-model-save.git"
+  },
+  "keywords": [
+    "backbone",
+    "model",
+    "sync"
+  ],
+  "author": "Lupu Gabriel <lupugabriel1@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/lupugabriel1/backbone-model-save/issues"
+  }
+}
