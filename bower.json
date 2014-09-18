@@ -1,9 +1,9 @@
-    {
-        "name": "backbone-model-save",
-        "version": "0.1.1",
-        "main": "dev/model-save.js",
-        "ignore": [
-            "LICENSE",
-            "README.md"
-        ],
-    }
+{
+    "name": "backbone-model-save",
+    "version": "0.1.1",
+    "main": "dev/model-save.js",
+    "ignore": [
+        "LICENSE",
+        "README.md"
+    ]
+}
