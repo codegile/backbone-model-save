@@ -12,17 +12,20 @@
 }(function(_, Backbone) {
 
     var ModelSave = Backbone.Model.extend({
-        save: function(attrs, options) {
-            var notSync = this.notSync;
-            if (notSync) {
-                // Use notSync either as an array or string
-                if (Object.prototype.toString.call(notSync) !== '[object Array]') {
-                    notSync = [ notSync ];
+        sync: function(method, model, options) {
+            if ( method === 'create' || method === 'update'  ) {
+                var notSync = model.notSync;
+                if (notSync) {
+                    options.attrs = options.attrs || model.toJSON();
+                    // Use notSync either as an array or string
+                    if (Object.prototype.toString.call(notSync) !== '[object Array]') {
+                        notSync = [ notSync ];
+                    }
+                    options.attrs = _.omit( options.attrs, notSync );
                 }
-                attrs = _.omit( this.attributes, notSync );
             }
 
-            Backbone.Model.prototype.save.call(this, attrs, options);
+            Backbone.Model.prototype.sync.call(this, method, model, options);
         }
     });
 
