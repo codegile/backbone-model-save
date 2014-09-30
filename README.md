@@ -1,6 +1,6 @@
 backbone-model-save
 =========
-0.1.0
+0.1.2
 
 Tested with Backbone 1.1.0 only
 

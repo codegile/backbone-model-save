@@ -1,6 +1,6 @@
 {
     "name": "backbone-model-save",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Send only specific attributes to server when saving models",
     "repository": {
         "type": "git",

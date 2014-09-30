@@ -32,6 +32,6 @@
     //Exports
     Backbone.ModelSave = ModelSave;
 
-    return Backbone;
+    return ModelSave;
 
 }));
